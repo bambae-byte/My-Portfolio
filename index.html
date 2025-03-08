@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <style>
         * {
             margin: 0;
@@ -13,12 +14,11 @@
             font-family: Arial, sans-serif;
         }
         body {
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #312d2d;
+            color: #ffffff;
             line-height: 1.6;
         }
         .navbar {
-            background: #333;
             padding: 1rem;
             text-align: center;
         }
@@ -37,13 +37,13 @@
             transition: 0.3s;
         }
         .navbar ul li a:hover {
-            color: #f4b400;
+            color: #6c4674;
         }
         .headings {
             text-align: center;
             margin: 50px 0;
             font-size: 32px;
-            color: #222;
+            color: #ffffff;
         }
         .main {
             text-align: center;
@@ -66,7 +66,7 @@
             max-width: 1100px;
             margin: auto;
             padding: 20px;
-            background: #fff;
+            background: #312d2d;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
@@ -133,55 +133,55 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="home" class="main">
-        <h1>I am <br> Ezil Elan</h1>
-        <button class="btn">Hire Me</button>
+    <section id="home" class="cover-page">
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <a href="#about"><button class="btn">Explore</button></a>
+        </div>
     </section>
     <section id="about">
         <h1 class="headings">About Me</h1>
-        <div id="pic">
-            <img src="./Dp.jpg" alt="Ezil Elan">
+        <div class="about-container">
+            <div id="pic">
+                <img src="./Dp.jpg" alt="Ezil Elan">
+            </div>
+            <div class="about-text">
+                <h2>Hello! I'm <span class="highlight">Ezil Elan</span></h2>
+                <p>
+                    A passionate <strong>3rd-year IT student</strong> who loves <span class="highlight">design, video editing, and photography.</span>
+                    I enjoy creating visuals that tell a story and bring ideas to life.
+                </p>
+                <p>Welcome to my portfolio.</p>
+            </div>
+            <section id="portfolio">
+                <h1 class="headings">Projects</h1>
+                <div class="gallery">
+                    <img src="./Premium Photo _ Ideas Creative Occupation Design.jpg" alt="">
+                    <img src="./desing.jpg" alt="">
+                    <img src="./Video Editing.jpg" alt="">
+                </div>
+            </section>
         </div>
     </section>
-    <section id="portfolio">
-        <h1 class="headings">Projects</h1>
-        <div class="gallery">
-            <img src="./download.jpg" alt="">
-            <img src="./Premium Photo _ Ideas Creative Occupation Design.jpg" alt="">
-            <img src="./Video Editing.jpg" alt="">
-        </div>
-    </section>
-      <section id="service">
+    <section id="service">
         <h1 class="headings">Skills</h1>
         <div class="skill-container">
             <div class="skill">
                 <p>Graphic Design</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%;">90%</div>
+                    <div class="skill-progress" data-progress="90%">90%</div>
                 </div>
             </div>
             <div class="skill">
-                <p>Layout Artist</p>
+                <p>Animation</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 85%;">85%</div>
+                    <div class="skill-progress" data-progress="85%">85%</div>
                 </div>
             </div>
             <div class="skill">
                 <p>Video Editing</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 45%;">45%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <p>Photograph</p>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 45%;">45%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <p>Video Grapher</p>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 65%;">65%</div>
+                    <div class="skill-progress" data-progress="45%">45%</div>
                 </div>
             </div>
         </div>
